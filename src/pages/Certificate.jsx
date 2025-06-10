@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
 
 const certificateImages = [
-  { src: "./src/Assets/images/cert1.png", title: "Certificate 1" },
-  { src: "./src/Assets/images/cert2.png", title: "Certificate 2" },
-  { src: "./src/Assets/images/cert3.png", title: "Certificate 3" },
-  { src: "./src/Assets/images/cert4.png", title: "Certificate 4" },
-  { src: "./src/Assets/images/cert5.png", title: "Certificate 5" },
-  { src: "./src/Assets/images/cert6.jpeg", title: "Certificate 6" },
+  { src: "/images/cert1.png", title: "Certificate 1" },
+  { src: "/images/cert2.png", title: "Certificate 2" },
+  { src: "/images/cert3.png", title: "Certificate 3" },
+  { src: "/images/cert4.png", title: "Certificate 4" },
+  { src: "/images/cert5.png", title: "Certificate 5" },
+  { src: "/images/cert6.jpeg", title: "Certificate 6" },
 ];
 
 function CertificateGallery() {
