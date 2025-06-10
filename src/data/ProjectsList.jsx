@@ -22,5 +22,16 @@ export const ProjectsList = {
         "Tensorflow",
       ],
     },
+    {
+      name: "My Portfolio",
+      description:
+        "This is my personal portfolio.",
+      technologies: [
+        "Tailwind",
+        "React",
+        "Vite",
+        "JavaScript",
+      ],
+    },
   ],
 };

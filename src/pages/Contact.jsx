@@ -17,7 +17,7 @@ function Contact() {
           onClick={() => {
             window.open(FooterLink);
           }}
-          className="h-[50px] w-[200px] border-2 border-black bg-transparent hover:bg-gray-900 hover:bg-opacity-40"
+          className="h-[50px] w-[200px] border-2 border-black bg-transparent hover:bg-[#faeac0] hover:bg-opacity-40"
         >
           Connect Now 
         </button>

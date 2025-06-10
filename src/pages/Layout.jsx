@@ -5,6 +5,7 @@ import About from "./About";
 import Contact from "./Contact";
 import Footer from "../components/Footer";
 import Project from "./Project";
+import Certificate from "./Certificate";
 import { Element } from "react-scroll";
 
 function Layout() {
@@ -19,6 +20,9 @@ function Layout() {
       </Element>
       <Element name="Project-section">
         <Project />
+      </Element>
+      <Element name="Certificate-section">
+        <Certificate />
       </Element>
       <Element name="Contact-section">
         <Contact />

@@ -3,13 +3,13 @@ import { UserData } from "../data/UserData";
 import Marquee from "react-fast-marquee";
 import { skillsData } from "../data/SkillsData";
 import { skillsImage } from "../utils/SkillsImage";
-import AboutImage from "../Assets/images/mej.png";
+import AboutImage from "../Assets/images/meh4.png";
 
 function About() {
   const { about } = UserData;
   return (
     <div className="mb-24 h-auto w-full sm:mb-0 md:h-screen">
-      <div className="mx-auto flex w-[90%] flex-col justify-between rounded-lg bg-transparent p-4 shadow-lg md:flex-row md:items-center">
+      <div className="mx-auto flex w-[90%] flex-col justify-between rounded-lg bg-[#f1f0e8] p-4 shadow-lg md:flex-row md:items-center">
         <div className="flex w-full flex-col md:w-[75%]">
           <p className="pb-2 text-2xl font-semibold tracking-wide text-gray-900">
             About Me
@@ -41,10 +41,11 @@ function About() {
           </div>
         </div>
 
-        <img
-  className="w-[300px] h-[300px] mt-4 rounded-full object-cover bg-cover bg-center bg-no-repeat md:w-[350px] md:h-[250px] lg:mt-0 lg:w-[250px] lg:h-[250px] transform -translate-x-4 md:-translate-x-6 lg:-translate-x-7"
+        
+       <img
   src={AboutImage}
   alt="Profile"
+  className="w-[250px] h-[250px] rounded-full object-cover"
 />
 
       </div>

@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { Link, Events, scrollSpy } from "react-scroll";
 import { CgMenuRight } from "react-icons/cg";
 import { UserData } from "../data/UserData";
-import logo from "../Assets/images/logoL.png";
 
 const Header = () => {
   const [isScrolling, setisScrolling] = useState(false);
@@ -40,12 +39,7 @@ const Header = () => {
       className={`fixed top-0 z-50 flex w-full items-center justify-between text-base transition-all sm:px-4 lg:px-28 lg:pt-2
       ${isScrolling ? "sticky" : ""}`}
     >
-      <div className="cursor-none">
-        <img
-          className="h-[80px] w-[90px] bg-cover bg-no-repeat"
-          src={logo}
-          alt="logo"
-        />
+      <div className="cursor-none h-[80px] w-[90px] bg-cover bg-no-repeat">
       </div>
       <nav className="hidden lg:block">
         <div className="cursor-pointer items-center space-x-4 sm:flex sm:flex-col sm:gap-4 lg:flex lg:flex-row lg:gap-6">
@@ -61,7 +55,7 @@ const Header = () => {
               className={
                 activeSection === "Home-section"
                   ? "active"
-                  : "text-white hover:text-gray-900"
+                  : "text-black hover:text-[#a58763]"
               }
             >
               Home
@@ -79,7 +73,7 @@ const Header = () => {
               className={
                 activeSection === "About-section"
                   ? "active"
-                  : "text-white hover:text-gray-900"
+                  : "text-black hover:text-[#a58763]"
               }
             >
               About
@@ -97,10 +91,28 @@ const Header = () => {
               className={
                 activeSection === "Project-section"
                   ? "active"
-                  : "text-white hover:text-gray-900"
+                  : "text-black hover:text-[#a58763]"
               }
             >
               Projects
+            </p>
+          </Link>
+           <Link
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={-150}
+            duration={500}
+            to="Certificate-section"
+          >
+            <p
+              className={
+                activeSection === "Certificate-section"
+                  ? "active"
+                  : "text-black hover:text-[#a58763]"
+              }
+            >
+              Certificates
             </p>
           </Link>
           <Link
@@ -115,7 +127,7 @@ const Header = () => {
               className={
                 activeSection === "Contact-section"
                   ? "active"
-                  : "text-white hover:text-gray-900"
+                  : "text-black hover:text-[#a58763]"
               }
             >
               Contact
@@ -126,7 +138,7 @@ const Header = () => {
               onClick={() => {
                 window.open(resumeUrl);
               }}
-              className="button-UI w-[120px] rounded-lg px-4 py-1.5 font-bold tracking-wider text-gray-900 shadow-xl hover:text-white"
+              className="button-UI w-[120px] rounded-lg px-4 py-1.5 font-bold tracking-wider text-black shadow-xl hover:text-[#a58763]"
             >
               Resume
             </button>
@@ -161,7 +173,7 @@ const Header = () => {
                 className={
                   activeSection === "Home-section"
                     ? "active"
-                    : "text-black hover:text-gray-900"
+                    : "text-black hover:text-[#a58763]"
                 }
                 onClick={toggleMobileMenu}
               >
@@ -180,7 +192,7 @@ const Header = () => {
                 className={
                   activeSection === "About-section"
                     ? "active"
-                    : "text-black hover:text-gray-900"
+                    : "text-black hover:text-[#a58763]"
                 }
                 onClick={toggleMobileMenu}
               >
@@ -199,11 +211,30 @@ const Header = () => {
                 className={
                   activeSection === "Project-section"
                     ? "active"
-                    : "text-black hover:text-gray-900"
+                    : "text-black hover:text-[#a58763]"
                 }
                 onClick={toggleMobileMenu}
               >
                 Projects
+              </p>
+            </Link>
+             <Link
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-150}
+              duration={500}
+              to="Certificate-section"
+            >
+              <p
+                className={
+                  activeSection === "Certificate-section"
+                    ? "active"
+                    : "text-black hover:text-[#a58763]"
+                }
+                onClick={toggleMobileMenu}
+              >
+                Certificate
               </p>
             </Link>
             <Link
@@ -218,7 +249,7 @@ const Header = () => {
                 className={
                   activeSection === "Contact-section"
                     ? "active"
-                    : "text-black hover:text-gray-900"
+                    : "text-black text-black hover:text-[#a58763]"
                 }
                 onClick={toggleMobileMenu}
               >
@@ -230,7 +261,7 @@ const Header = () => {
                 onClick={() => {
                   window.open(resumeUrl);
                 }}
-                className="button-UI w-[120px] rounded-lg px-4 py-1.5 font-bold tracking-wider text-gray-900 shadow-xl hover:text-white"
+                className="button-UI w-[120px] rounded-lg px-4 py-1.5 font-bold tracking-wider text-black shadow-xl hover:text-[#a58763]"
               >
                 Resume
               </button>

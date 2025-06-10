@@ -5,17 +5,18 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 body {
   font-family: "Raleway", serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #EADDCA;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     43deg,
-    #CD7F32 0%,
-    #E1C16E 46%,
-    #FFA07A 100%
-  );
+
+    #FFFFFF 100%
+  ); */
 }
 html {
   scroll-behavior: smooth;
@@ -77,14 +78,14 @@ html {
 }
 .sticky {
   transition: all 0.3s ease-out 0s !important;
-  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
+  box-shadow: 0px 10px 10px 0px rgba(142, 140, 151, 0.171) !important;
   backdrop-filter: blur(15px) !important;
 }
 .navbar-bg{
   background-color: #ffff;
 }
 .button-UI {
-  background-color: #EADDCA
+  background-color: #f5f2ef
 }
 
 @keyframes wave-animation {
