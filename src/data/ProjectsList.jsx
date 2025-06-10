@@ -14,7 +14,7 @@ export const ProjectsList = {
     {
       name: "ExhausTrack",
       description:
-        "ExhausTrack is an AI Facial Recognition Detection for students who are exhausted for their P.E Activities (this is on-going capstone project for CAP101-102)",
+        "ExhausTrack is an AI Facial Recognition Detection for students who are exhausted for their P.E Activities and this is capstone project for CAP101-102 subject.",
       technologies: [
         "Python",
         "CVAT",
